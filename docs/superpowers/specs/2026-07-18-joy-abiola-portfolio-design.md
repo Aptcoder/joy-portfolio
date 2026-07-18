@@ -2,6 +2,7 @@
 
 **Date:** 2026-07-18
 **Status:** Approved for planning
+**Note:** Joy Abiola is male — all site copy uses he/him.
 
 ## Purpose & Audience
 
@@ -69,7 +70,7 @@ Locked with the user via visual companion mockups:
   - 01 Investment Analysis — macro & micro modeling; portfolio optimization; buy/sell-side due diligence.
   - 02 Corporate Finance — capital structuring; strategic allocation; financial forecast modeling.
   - 03 Audit & Compliance — statutory accounting; regulatory compliance; internal controls.
-- **About intro:** narrative paragraph (OAU accounting alumna, driven by structural accuracy and value creation); pull-quote: "Financial leadership is not merely about tracking value — it is about architecting the frameworks that create it."; merit callout: Best in Financial Accounting (further honors available if wanted: Most Outstanding Class Representative, Most Influential Student, Leadership Award — one callout max, use sparingly).
+- **About intro:** narrative paragraph (OAU accounting alumnus, driven by structural accuracy and value creation); pull-quote: "Financial leadership is not merely about tracking value — it is about architecting the frameworks that create it."; merit callout: Best in Financial Accounting (further honors available if wanted: Most Outstanding Class Representative, Most Influential Student, Leadership Award — one callout max, use sparingly).
 - **Timeline entries (role, company, 1–2 bullets each) — per LinkedIn profile (source of truth over wireframe):**
   - Zedcrest Group — Investment Analyst (February 2026 – present): end-to-end lifecycle of investment transactions and portfolio movements; settlement efficiency and 100% regulatory compliance in financial reporting.
   - Africa Plus Partners Nigeria Limited — Asset Operation Management Intern (November 2024 – January 2026): supporting operational efficiency of investee companies and operating assets across the asset life cycle.
