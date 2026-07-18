@@ -14,6 +14,8 @@
   --accent: #1e5c46;
   --on-accent: #ffffff;
   --accent-soft: #eaf2ee;
+  --band: #f6f7f6;
+  --wash: rgba(30, 92, 70, 0.035);
 
   --font-display: "Archivo", sans-serif;
   --font-body: "Spectral", serif;
@@ -46,6 +48,8 @@
   --accent: #8fbfa8;
   --on-accent: #0c1511;
   --accent-soft: #1a2420;
+  --band: #141a18;
+  --wash: rgba(143, 191, 168, 0.04);
 }
 
 /* ---------- base ---------- */
@@ -214,7 +218,13 @@ a:focus-visible, button:focus-visible {
 
 /* ---------- hero ---------- */
 
-.hero { padding: var(--space-6) 0 var(--space-5); }
+.hero {
+  padding: var(--space-6) 0 var(--space-5);
+  background: linear-gradient(180deg, var(--wash), transparent 60%);
+}
+
+/* Tinted bands — alternating section backgrounds, full-bleed */
+.band { background: var(--band); }
 
 .hero-grid {
   display: grid;
@@ -378,6 +388,17 @@ a:focus-visible, button:focus-visible {
 }
 
 .section-head h2 { font-size: var(--text-lg); }
+
+.section-num {
+  font-family: var(--font-display);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+  margin-right: 0.75rem;
+  vertical-align: 0.35em;
+}
 
 /* ---------- competencies ---------- */
 
