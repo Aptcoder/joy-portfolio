@@ -374,6 +374,40 @@ a:focus-visible, button:focus-visible {
   color: var(--ink-2);
 }
 
+/* Mixed-style brand marks unified as ink silhouettes; white in dark mode */
+.logo-row { align-items: center; }
+
+.logo-row img {
+  display: block;
+  height: 1.9rem;
+  width: auto;
+  filter: grayscale(1) brightness(0) opacity(0.5);
+  transition: filter 150ms ease;
+}
+
+.logo-row li:hover img { filter: grayscale(1) brightness(0) opacity(0.8); }
+
+[data-theme="dark"] .logo-row img {
+  filter: grayscale(1) brightness(0) invert(1) opacity(0.55);
+}
+
+[data-theme="dark"] .logo-row li:hover img {
+  filter: grayscale(1) brightness(0) invert(1) opacity(0.85);
+}
+
+/* Detailed crests lose legibility as flat silhouettes — keep their
+   internal contrast, just desaturated (inverted to light in dark mode) */
+.logo-row img.crest { filter: grayscale(1) opacity(0.55); }
+.logo-row li:hover img.crest { filter: grayscale(1) opacity(0.85); }
+
+[data-theme="dark"] .logo-row img.crest {
+  filter: grayscale(1) invert(1) opacity(0.6);
+}
+
+[data-theme="dark"] .logo-row li:hover img.crest {
+  filter: grayscale(1) invert(1) opacity(0.9);
+}
+
 /* ---------- sections ---------- */
 
 .section { padding: var(--space-5) 0; }
