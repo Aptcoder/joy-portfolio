@@ -300,19 +300,43 @@ a:focus-visible, button:focus-visible {
   text-transform: uppercase;
 }
 
-/* Second portrait crossfades over the first */
-.portrait .portrait-alt {
+/* Portrait slideshow: stacked slides crossfade; tap or dots to switch */
+.portrait { cursor: pointer; }
+
+.portrait .slide {
   position: absolute;
   inset: 0;
   opacity: 0;
-  transition: opacity 1400ms ease;
+  transition: opacity 900ms ease;
 }
 
-.portrait .portrait-alt.show { opacity: 1; }
+.portrait .slide.is-active { opacity: 1; }
 
-@media (prefers-reduced-motion: reduce) {
-  .portrait .portrait-alt { display: none; }
+.portrait-dots {
+  position: absolute;
+  bottom: 0.7rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 0.45rem;
+  z-index: 2;
 }
+
+.portrait-dots button {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.25);
+  transition: background 150ms ease, transform 150ms ease;
+}
+
+.portrait-dots button:hover { transform: scale(1.25); }
+
+.portrait-dots button.active { background: var(--accent); }
 
 .portrait img ~ .portrait-fallback { display: none; }
 .portrait img.missing { display: none; }

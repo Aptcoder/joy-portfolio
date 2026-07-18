@@ -1,8 +1,47 @@
-// Crossfade between the two hero portraits every few seconds.
+// Hero portrait slideshow: auto-crossfade, tap to advance, dots to jump.
 (function () {
-  var alt = document.querySelector(".portrait-alt");
-  if (!alt || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-  setInterval(function () { alt.classList.toggle("show"); }, 6000);
+  var figure = document.querySelector(".portrait");
+  if (!figure) return;
+  var slides = Array.prototype.slice.call(figure.querySelectorAll(".slide"));
+  var dotsWrap = figure.querySelector(".portrait-dots");
+  if (slides.length < 2 || !dotsWrap) return;
+
+  var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  var index = 0, timer = null;
+
+  var dots = slides.map(function (_, i) {
+    var b = document.createElement("button");
+    b.setAttribute("aria-label", "Show portrait " + (i + 1));
+    if (i === 0) b.className = "active";
+    b.addEventListener("click", function (e) {
+      e.stopPropagation();
+      show(i);
+      restart();
+    });
+    dotsWrap.appendChild(b);
+    return b;
+  });
+
+  function show(i) {
+    slides[index].classList.remove("is-active");
+    dots[index].classList.remove("active");
+    index = (i + slides.length) % slides.length;
+    slides[index].classList.add("is-active");
+    dots[index].classList.add("active");
+  }
+
+  function restart() {
+    if (reduced) return;
+    clearInterval(timer);
+    timer = setInterval(function () { show(index + 1); }, 6000);
+  }
+
+  figure.addEventListener("click", function () {
+    show(index + 1);
+    restart();
+  });
+
+  restart();
 })();
 
 // Lightbox for recognition photos: click to view full-size with caption.

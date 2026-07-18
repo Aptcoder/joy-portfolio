@@ -12,7 +12,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700&family=Spectral:ital,wght@0,300;0,400;1,400&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles-20260718c.css">
+  <link rel="stylesheet" href="styles-20260718d.css">
   <script>
     // Apply saved theme before paint to avoid a flash.
     document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
@@ -49,8 +49,9 @@
             </div>
           </div>
           <figure class="portrait reveal">
-            <img src="assets/portrait.jpg" alt="Portrait of Joy Abiola" onerror="this.classList.add('missing')">
-            <img class="portrait-alt" src="assets/portrait-2.jpg" alt="" aria-hidden="true">
+            <img class="slide is-active" src="assets/portrait.jpg" alt="Portrait of Joy Abiola" onerror="this.classList.add('missing')">
+            <img class="slide" src="assets/portrait-2.jpg" alt="Portrait of Joy Abiola, studio headshot">
+            <div class="portrait-dots" role="tablist" aria-label="Choose portrait"></div>
             <div class="portrait-fallback" aria-hidden="true">
               <span class="monogram">JA</span>
               <span class="caption">Portrait forthcoming</span>
@@ -172,6 +173,6 @@
     </section>
   </main>
 
-  <script src="main-20260718c.js"></script>
+  <script src="main-20260718d.js"></script>
 </body>
 </html>
