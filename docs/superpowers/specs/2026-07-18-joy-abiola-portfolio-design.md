@@ -58,14 +58,36 @@ Locked with the user via visual companion mockups:
 - Subtle hover states on links/cards; visible focus rings.
 - `prefers-reduced-motion: reduce` disables reveals/transitions.
 
-## Content & Placeholders
+## Content Inventory
 
-Real copy written in the site's voice during implementation. Placeholders, each marked with an HTML comment for easy swapping:
+### Copy drafted during implementation (in the site's voice, from wireframe source material)
+
+- **Hero:** kicker (ASSOCIATE CHARTERED ACCOUNTANT · LAGOS), headline, 2-line subhead, button labels.
+- **Stat row (Home) / Impact (About):** three stats with context lines — 100% regulatory compliance across audited frameworks; 2,000+ delegates and professionals managed at finance summits; Financial Secretary, large-scale campus budget management. (ACA · ICAN shown as the third hero stat.)
+- **Affiliations ribbon:** Zedcrest Wealth, Africa Plus Partners, AFEX, ICAN, Obafemi Awolowo University.
+- **Competencies (3 bullets each):**
+  - 01 Investment Analysis — macro & micro modeling; portfolio optimization; buy/sell-side due diligence.
+  - 02 Corporate Finance — capital structuring; strategic allocation; financial forecast modeling.
+  - 03 Audit & Compliance — statutory accounting; regulatory compliance; internal controls.
+- **About intro:** narrative paragraph (OAU accounting alumna, driven by structural accuracy and value creation); pull-quote: "Financial leadership is not merely about tracking value — it is about architecting the frameworks that create it."; merit callout: Best in Financial Accounting.
+- **Timeline entries (role, company, 1–2 bullets each):**
+  - Zedcrest Wealth — Investment Analyst / Financial Advisor (2024–present): asset allocation execution & wealth preservation.
+  - Africa Plus Partners (Infrastructure Fund) — Private Equity Analyst Intern: project financial modeling and risk assessment.
+  - AFEX Capital Markets — Commodities & Structured Finance Analyst Intern: supply chain financial structuring & trade data.
+  - Education: B.Sc. Accounting, Obafemi Awolowo University; ACA, ICAN.
+- **Contact section:** heading, location line "Lagos, Nigeria", link labels.
+- **Meta:** page titles, meta descriptions, Open Graph tags for both pages.
+
+All drafted copy is subject to Samuel's/Joy's review — dates, role titles, and stat claims especially, since they must be factually accurate.
+
+### Supplied by Samuel (placeholders until then, each marked with an HTML comment)
 
 - Email address
 - LinkedIn URL
 - CV PDF (`assets/cv-joy-abiola.pdf`)
-- Portrait image (`assets/portrait.jpg`)
+- Portrait image (`assets/portrait.jpg`) — professional photo exists
+- Exact internship date ranges for Africa Plus Partners and AFEX (wireframe says only "past tenure"; timeline shows placeholders until provided)
+- Favicon source (can be generated from a simple "JA" monogram if none provided)
 
 ## Verification (manual checklist, no test suite)
 
