@@ -90,19 +90,19 @@ a:focus-visible, button:focus-visible {
   padding: 0 var(--space-3);
 }
 
-/* Ledger rules — the signature. Double rule opens a section (the
-   accountant's totals line); single hairlines carry rows of figures. */
+/* Ledger rules — a single hairline opens each section, with a short
+   accent tick marking its start; hairlines carry rows of figures. */
 .rule-total {
-  border-top: 1px solid var(--border-strong);
+  border-top: 1px solid var(--border);
   position: relative;
 }
 .rule-total::after {
   content: "";
   position: absolute;
-  top: 3px;
+  top: -1px;
   left: 0;
-  right: 0;
-  border-top: 1px solid var(--border);
+  width: 2.5rem;
+  border-top: 2px solid var(--accent);
 }
 
 .eyebrow {
