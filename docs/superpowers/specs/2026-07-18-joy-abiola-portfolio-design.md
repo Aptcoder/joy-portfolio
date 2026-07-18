@@ -69,12 +69,13 @@ Locked with the user via visual companion mockups:
   - 01 Investment Analysis — macro & micro modeling; portfolio optimization; buy/sell-side due diligence.
   - 02 Corporate Finance — capital structuring; strategic allocation; financial forecast modeling.
   - 03 Audit & Compliance — statutory accounting; regulatory compliance; internal controls.
-- **About intro:** narrative paragraph (OAU accounting alumna, driven by structural accuracy and value creation); pull-quote: "Financial leadership is not merely about tracking value — it is about architecting the frameworks that create it."; merit callout: Best in Financial Accounting.
-- **Timeline entries (role, company, 1–2 bullets each):**
-  - Zedcrest Wealth — Investment Analyst / Financial Advisor (2024–present): asset allocation execution & wealth preservation.
-  - Africa Plus Partners (Infrastructure Fund) — Private Equity Analyst Intern: project financial modeling and risk assessment.
-  - AFEX Capital Markets — Commodities & Structured Finance Analyst Intern: supply chain financial structuring & trade data.
-  - Education: B.Sc. Accounting, Obafemi Awolowo University; ACA, ICAN.
+- **About intro:** narrative paragraph (OAU accounting alumna, driven by structural accuracy and value creation); pull-quote: "Financial leadership is not merely about tracking value — it is about architecting the frameworks that create it."; merit callout: Best in Financial Accounting (further honors available if wanted: Most Outstanding Class Representative, Most Influential Student, Leadership Award — one callout max, use sparingly).
+- **Timeline entries (role, company, 1–2 bullets each) — per LinkedIn profile (source of truth over wireframe):**
+  - Zedcrest Group — Investment Analyst (February 2026 – present): end-to-end lifecycle of investment transactions and portfolio movements; settlement efficiency and 100% regulatory compliance in financial reporting.
+  - Africa Plus Partners Nigeria Limited — Asset Operation Management Intern (November 2024 – January 2026): supporting operational efficiency of investee companies and operating assets across the asset life cycle.
+  - AFEX — Credit Operations Intern (September – October 2023): analyst shadowing and data entry on firm financials (keep bullet modest and honest).
+  - Leadership: Financial Secretary, Great Ife Students' Union, OAU (March 2022 – July 2023): union accounts and budget preparation/presentation; organized the Financial Independence & Literacy Summit (2,000+ attendees); scholarships for 17 students via the indigent student fund. Class Governor, OAU (2019–2024): coordinated a class of 404 students.
+  - Education & certifications: B.Sc. Accounting, Obafemi Awolowo University (2019–2024); ACA, ICAN; AAT West Africa; Financial Modeling & Valuation Analysis (FMVA).
 - **Contact section:** heading, location line "Lagos, Nigeria", link labels.
 - **Meta:** page titles, meta descriptions, Open Graph tags for both pages.
 
@@ -82,12 +83,23 @@ All drafted copy is subject to Samuel's/Joy's review — dates, role titles, and
 
 ### Supplied by Samuel (placeholders until then, each marked with an HTML comment)
 
-- Email address
-- LinkedIn URL
+- Email address — the LinkedIn PDF lists `legbetistephen1@gmail.com`, which appears to belong to someone else; confirm the correct contact email before launch
 - CV PDF (`assets/cv-joy-abiola.pdf`)
 - Portrait image (`assets/portrait.jpg`) — professional photo exists
-- Exact internship date ranges for Africa Plus Partners and AFEX (wireframe says only "past tenure"; timeline shows placeholders until provided)
 - Favicon source (can be generated from a simple "JA" monogram if none provided)
+
+### Resolved from LinkedIn profile (2026-07-18)
+
+- LinkedIn URL: `linkedin.com/in/joy-abiola-a35699190`
+- All role titles and date ranges (see timeline above)
+- Hero stat corroboration: 100% regulatory compliance (Zedcrest role description); 2,000+ attendees (Financial Independence & Literacy Summit)
+
+### Wireframe claims dropped as unsupported by LinkedIn
+
+- "Private Equity Analyst Intern" at Africa Plus Partners (actual: Asset Operation Management Intern)
+- "Commodities & Structured Finance Analyst" at AFEX (actual: Credit Operations Intern, 2 months)
+- "Investment Analyst / Financial Advisor since 2024" at Zedcrest (actual: Investment Analyst since February 2026)
+- Home hero kicker/subhead must reflect the operations-and-analysis reality, not advisory-firm framing
 
 ## Verification (manual checklist, no test suite)
 
