@@ -567,7 +567,9 @@ a:focus-visible, button:focus-visible {
   display: grid;
   grid-template-columns: 6fr 6fr;
   gap: var(--space-4);
-  padding-top: var(--space-3);
+  /* bounded by rules on both sides, so pad symmetrically; keeps the
+     rule-to-heading gap close to the other sections' rhythm */
+  padding: var(--space-3) 0;
   align-items: center;
 }
 
