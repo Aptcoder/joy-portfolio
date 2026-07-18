@@ -300,6 +300,20 @@ a:focus-visible, button:focus-visible {
   text-transform: uppercase;
 }
 
+/* Second portrait crossfades over the first */
+.portrait .portrait-alt {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1400ms ease;
+}
+
+.portrait .portrait-alt.show { opacity: 1; }
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait .portrait-alt { display: none; }
+}
+
 .portrait img ~ .portrait-fallback { display: none; }
 .portrait img.missing { display: none; }
 .portrait img.missing ~ .portrait-fallback { display: flex; }

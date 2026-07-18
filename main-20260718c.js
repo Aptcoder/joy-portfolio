@@ -1,3 +1,10 @@
+// Crossfade between the two hero portraits every few seconds.
+(function () {
+  var alt = document.querySelector(".portrait-alt");
+  if (!alt || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  setInterval(function () { alt.classList.toggle("show"); }, 6000);
+})();
+
 // Lightbox for recognition photos: click to view full-size with caption.
 (function () {
   var groups = document.querySelectorAll(".row-photos");
