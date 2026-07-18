@@ -492,23 +492,6 @@ a:focus-visible, button:focus-visible {
   padding-left: var(--space-3);
 }
 
-.pull-quote cite {
-  display: block;
-  margin-top: var(--space-2);
-  font-style: normal;
-}
-
-.pull-quote cite a {
-  font-family: var(--font-display);
-  font-size: var(--text-xs);
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-  color: var(--ink-3);
-  text-decoration: none;
-}
-
-.pull-quote cite a:hover { color: var(--accent); }
 
 .about-narrative p { margin-bottom: var(--space-3); color: var(--ink-2); }
 .about-narrative p:first-child { color: var(--ink); }
